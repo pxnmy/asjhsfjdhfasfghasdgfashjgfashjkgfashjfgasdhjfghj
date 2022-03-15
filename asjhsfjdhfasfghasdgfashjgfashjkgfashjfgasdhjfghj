@@ -1,0 +1,399 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Prorumblegui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local AutoDeath = Instance.new("TextButton")
+local Shadow = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local AutoJoin = Instance.new("TextButton")
+local Shadow_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local AntiAfk = Instance.new("TextButton")
+local Shadow_3 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local SmallScript = Instance.new("TextButton")
+local Shadow_4 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local PlayerName = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local Shadow_5 = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+
+--Properties:
+
+Prorumblegui.Name = "Pro rumble gui"
+Prorumblegui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Prorumblegui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Prorumblegui.DisplayOrder = 999999999
+Prorumblegui.ResetOnSpawn = false
+
+frame.Name = "frame"
+frame.Parent = Prorumblegui
+frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+frame.BorderSizePixel = 0
+frame.Position = UDim2.new(0.379999995, 0, -0.75, 0)
+frame.Size = UDim2.new(0, 328, 0, 423)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(45, 168, 182)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(64, 96, 161))}
+UIGradient.Parent = frame
+
+UICorner.CornerRadius = UDim.new(0, 13)
+UICorner.Parent = frame
+
+AutoDeath.Name = "AutoDeath"
+AutoDeath.Parent = frame
+AutoDeath.BackgroundColor3 = Color3.fromRGB(77, 156, 115)
+AutoDeath.BorderSizePixel = 0
+AutoDeath.Position = UDim2.new(0.223115325, 0, 0.121764183, 0)
+AutoDeath.Size = UDim2.new(0, 180, 0, 45)
+AutoDeath.ZIndex = 2
+AutoDeath.Font = Enum.Font.GothamSemibold
+AutoDeath.Text = ""
+AutoDeath.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoDeath.TextScaled = true
+AutoDeath.TextSize = 14.000
+AutoDeath.TextWrapped = true
+
+Shadow.Name = "Shadow"
+Shadow.Parent = AutoDeath
+Shadow.BackgroundColor3 = Color3.fromRGB(58, 118, 86)
+Shadow.BackgroundTransparency = 0.150
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel.Parent = AutoDeath
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel.Size = UDim2.new(1, -20, 1, -20)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "Die u pussyhead"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+AutoJoin.Name = "AutoJoin"
+AutoJoin.Parent = frame
+AutoJoin.BackgroundColor3 = Color3.fromRGB(77, 156, 115)
+AutoJoin.BorderSizePixel = 0
+AutoJoin.Position = UDim2.new(0.21701777, 0, 0.318705201, 0)
+AutoJoin.Size = UDim2.new(0, 180, 0, 45)
+AutoJoin.ZIndex = 2
+AutoJoin.Font = Enum.Font.GothamSemibold
+AutoJoin.Text = ""
+AutoJoin.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoJoin.TextScaled = true
+AutoJoin.TextSize = 14.000
+AutoJoin.TextWrapped = true
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = AutoJoin
+Shadow_2.BackgroundColor3 = Color3.fromRGB(58, 118, 86)
+Shadow_2.BackgroundTransparency = 0.150
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_2.Parent = AutoJoin
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_2.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "Join dat rumble"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+AntiAfk.Name = "AntiAfk"
+AntiAfk.Parent = frame
+AntiAfk.BackgroundColor3 = Color3.fromRGB(77, 156, 115)
+AntiAfk.BorderSizePixel = 0
+AntiAfk.Position = UDim2.new(0.21701777, 0, 0.532277644, 0)
+AntiAfk.Size = UDim2.new(0, 180, 0, 45)
+AntiAfk.ZIndex = 2
+AntiAfk.Font = Enum.Font.GothamSemibold
+AntiAfk.Text = ""
+AntiAfk.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfk.TextScaled = true
+AntiAfk.TextSize = 14.000
+AntiAfk.TextWrapped = true
+
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = AntiAfk
+Shadow_3.BackgroundColor3 = Color3.fromRGB(58, 118, 86)
+Shadow_3.BackgroundTransparency = 0.150
+Shadow_3.BorderSizePixel = 0
+Shadow_3.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_3.Parent = AntiAfk
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_3.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.Cartoon
+TextLabel_3.Text = "Stay afk a whole day"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.Position = UDim2.new(0.00162873615, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 327, 0, 43)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "David's Pro Rumble"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 13)
+UICorner_2.Parent = TextLabel_4
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(0.24, Color3.fromRGB(71, 0, 214)), ColorSequenceKeypoint.new(0.35, Color3.fromRGB(24, 142, 220)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(86, 38, 230)), ColorSequenceKeypoint.new(0.57, Color3.fromRGB(39, 37, 232)), ColorSequenceKeypoint.new(0.64, Color3.fromRGB(47, 236, 205)), ColorSequenceKeypoint.new(0.79, Color3.fromRGB(35, 143, 244)), ColorSequenceKeypoint.new(0.85, Color3.fromRGB(140, 9, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+UIGradient_2.Parent = TextLabel_4
+
+SmallScript.Name = "Small Script"
+SmallScript.Parent = frame
+SmallScript.BackgroundColor3 = Color3.fromRGB(77, 156, 115)
+SmallScript.BorderSizePixel = 0
+SmallScript.Position = UDim2.new(0.21701777, 0, 0.737591386, 0)
+SmallScript.Size = UDim2.new(0, 180, 0, 45)
+SmallScript.ZIndex = 2
+SmallScript.Font = Enum.Font.GothamSemibold
+SmallScript.Text = ""
+SmallScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+SmallScript.TextScaled = true
+SmallScript.TextSize = 14.000
+SmallScript.TextWrapped = true
+
+Shadow_4.Name = "Shadow"
+Shadow_4.Parent = SmallScript
+Shadow_4.BackgroundColor3 = Color3.fromRGB(58, 118, 86)
+Shadow_4.BackgroundTransparency = 0.150
+Shadow_4.BorderSizePixel = 0
+Shadow_4.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_5.Parent = SmallScript
+TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_5.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_5.ZIndex = 2
+TextLabel_5.Font = Enum.Font.Cartoon
+TextLabel_5.Text = "Be small as u dick"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = frame
+PlayerName.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+PlayerName.BackgroundTransparency = 0.450
+PlayerName.Position = UDim2.new(0.110310435, 0, 0.898345232, 0)
+PlayerName.Size = UDim2.new(0, 254, 0, 43)
+PlayerName.Font = Enum.Font.Bodoni
+PlayerName.Text = "UR NAME"
+PlayerName.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 56)
+UICorner_3.Parent = PlayerName
+
+Open.Name = "Open"
+Open.Parent = Prorumblegui
+Open.BackgroundColor3 = Color3.fromRGB(170, 255, 127)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.910000026, 0, 0.950000048, 0)
+Open.Size = UDim2.new(0, 138, 0, 35)
+Open.ZIndex = 2
+Open.Font = Enum.Font.GothamSemibold
+Open.Text = ""
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+Shadow_5.Name = "Shadow"
+Shadow_5.Parent = Open
+Shadow_5.BackgroundColor3 = Color3.fromRGB(76, 118, 37)
+Shadow_5.BackgroundTransparency = 0.150
+Shadow_5.BorderSizePixel = 0
+Shadow_5.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_6.Parent = Open
+TextLabel_6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_6.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_6.ZIndex = 2
+TextLabel_6.Font = Enum.Font.Cartoon
+TextLabel_6.Text = "Open Pro Gui"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Prorumblegui
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+Close.Position = UDim2.new(-0.000512123108, 0, 0.953738213, 0)
+Close.Size = UDim2.new(0, 47, 0, 41)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.Visible = false
+
+UICorner_4.CornerRadius = UDim.new(1, 30)
+UICorner_4.Parent = Close
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 255, 127)), ColorSequenceKeypoint.new(0.25, Color3.fromRGB(125, 255, 114)), ColorSequenceKeypoint.new(0.36, Color3.fromRGB(147, 255, 107)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(203, 255, 90)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(203, 255, 90))}
+UIGradient_3.Parent = Close
+
+-- Scripts:
+
+local function AHHO_fake_script() -- Prorumblegui.LocalScript 
+	local script = Instance.new('LocalScript', Prorumblegui)
+
+	frame = script.Parent.frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(AHHO_fake_script)()
+local function ETZCS_fake_script() -- Prorumblegui.LocalScript 
+	local script = Instance.new('LocalScript', Prorumblegui)
+
+	local frame = script.parent.frame
+	local Close =script.parent.Close
+	
+	Close.MouseButton1Up:Connect(function()
+		-- Open Inventory
+	
+		frame:TweenPosition(
+			UDim2.new(0.38, 0,-0.75, 0), -- end Position 
+			"In", -- Easing Direction
+			"Elastic", -- Easing Style
+			2.4, -- Time In Seconds
+			true -- Override Any Other Tweens
+		)
+	end)
+end
+coroutine.wrap(ETZCS_fake_script)()
+local function WRRNSD_fake_script() -- Prorumblegui.LocalScript 
+	local script = Instance.new('LocalScript', Prorumblegui)
+
+	local frame = script.parent.frame
+	local Open =script.parent.Open
+	
+	Open.MouseButton1Up:Connect(function()
+		-- Open Inventory
+	
+		frame:TweenPosition(
+			UDim2.new(0.232, 0, 0.173, 0), -- end Position 
+			"In", -- Easing Direction
+			"Quad", -- Easing Style
+			1.6, -- Time In Seconds
+			false -- Override Any Other Tweens
+		)
+	end)
+end
+coroutine.wrap(WRRNSD_fake_script)()
+
+
+Open.MouseButton1Click:connect(function()
+Open.Visible = false
+Close.Visible = true
+end)
+
+
+Close.MouseButton1Click:connect(function()
+Open.Visible = true
+Close.Visible = false
+end)
+
+
+
+AutoJoin.MouseButton1Click:connect(function()
+	for i = 1, 29341283091273198273189372903489032819038103891902381230981 do wait()
+		game:GetService("ReplicatedStorage").TourneyEvents.Enter:FireServer()
+	end
+end)
+
+AutoDeath.MouseButton1Click:connect(function()
+	local Timer = game:GetService("ReplicatedStorage").TourneyEvents.Timer
+	for i = 1, 8190809890890809890809808090980898998809808998098908090098 do wait()
+		if Timer.Value == 1 then wait(3)
+			for i,v in pairs(game:GetService("Workspace").Warriors.Waiting:GetChildren()) do 
+				if v.Name == PlayerName.Text then v.Head:Destroy() 
+				end
+			end
+		end
+	end
+end)
+
+AntiAfk.MouseButton1Click:connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end)
+
+SmallScript.MouseButton1Click:connect(function()
+game.GetService("RunService").Heartbeat:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.BodyTypeScale:Destroy()
+game.Players.LocalPlayer.Character.Humanoid.BodyWidthScale:Destroy()
+game.Players.LocalPlayer.Character.Humanoid.BodyHeightScale:Destroy()
+game.Players.LocalPlayer.Character.Humanoid.BodyDepthScale:Destroy()
+    end)
+ end)
+
+PlayerName.FocusLost:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		if (string.sub(string.lower(v.Name),1,string.len(PlayerName.Text))) == string.lower(PlayerName.Text) then
+			PlayerName.Text = v.Name
+		end
+	end
+end)
